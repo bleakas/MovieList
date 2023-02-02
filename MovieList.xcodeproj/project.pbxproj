@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC0D3226298C5BD100AFA445 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = CC0D3225298C5BD100AFA445 /* Resolver */; };
 		CC8E03572985448E00816902 /* MovieListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E03562985448E00816902 /* MovieListApp.swift */; };
 		CC8E03592985448E00816902 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E03582985448E00816902 /* ContentView.swift */; };
 		CC8E035B2985448F00816902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC8E035A2985448F00816902 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0D3226298C5BD100AFA445 /* Resolver in Frameworks */,
 				CC8E68012986F7D400E1B92C /* MovieBrowser in Frameworks */,
 				CCF0EBF82986EB840084A638 /* SharedResources in Frameworks */,
 			);
@@ -169,6 +171,7 @@
 			packageProductDependencies = (
 				CCF0EBF72986EB840084A638 /* SharedResources */,
 				CC8E68002986F7D400E1B92C /* MovieBrowser */,
+				CC0D3225298C5BD100AFA445 /* Resolver */,
 			);
 			productName = MovieList;
 			productReference = CC8E03532985448E00816902 /* MovieList.app */;
@@ -221,6 +224,7 @@
 			);
 			mainGroup = CC8E034A2985448E00816902;
 			packageReferences = (
+				CC0D3224298C5BD100AFA445 /* XCRemoteSwiftPackageReference "Resolver" */,
 			);
 			productRefGroup = CC8E03542985448E00816902 /* Products */;
 			projectDirPath = "";
@@ -571,7 +575,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		CC0D3224298C5BD100AFA445 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		CC0D3225298C5BD100AFA445 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC0D3224298C5BD100AFA445 /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
 		CC8E68002986F7D400E1B92C /* MovieBrowser */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MovieBrowser;

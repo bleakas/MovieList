@@ -13,7 +13,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImageSwiftUI.git", from: "2.0.0"),
-        .package(path: "../TMDBClient")
+        .package(path: "../TMDBClient"),
+        .package(url: "https://github.com/hmlongco/Resolver.git", from: "1.1.2")
     ],
     targets: [
         .target(
