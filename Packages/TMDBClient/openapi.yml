@@ -1,0 +1,220 @@
+openapi: 3.0.3
+info:
+  title: Swagger Petstore - OpenAPI 3.0
+  description: |-
+    TMDB swagger file
+  version: 1.0.0
+servers:
+  - url: https://api.themoviedb.org/3
+tags:
+  - name: movies
+    description: Everything about movies
+  - name: search
+    description: Search items
+paths:
+  /movie/popular:
+    get:
+      tags:
+        - movies
+      summary: Finds popular movies
+      description: Returns 20 popular movies
+      operationId: getPopularMovies
+      parameters:
+        - name: page
+          in: query
+          description: page number
+          schema:
+            type: integer
+        - name: language
+          in: query
+          description: language in ISO 639-1
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MovieList'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TMDBError'
+        '404':
+          description: Movie not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TMDBError'
+      security:
+        - tmdbApiKey: []
+  /movie/{movieId}:
+    get:
+      tags:
+        - movies
+      summary: Find movie by ID
+      description: Returns movie details
+      operationId: getMovieDetailsById
+      parameters:
+        - name: movieId
+          in: path
+          description: ID of movie to return
+          required: true
+          schema:
+            type: integer
+        - name: append_to_response
+          in: query
+          description: additional data
+          schema:
+            type: string
+            enum: [credits]
+        - name: language
+          in: query
+          description: language in ISO 639-1
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MovieDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TMDBError'
+        '404':
+          description: Movie not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TMDBError'
+      security:
+        - tmdbApiKey: []
+  /search/movie:
+    get:
+      tags:
+        - search
+      summary: Search movies
+      description: Returns searched movies
+      operationId: searchMovie
+      parameters:
+        - name: page
+          in: query
+          description: page number
+          schema:
+            type: integer
+        - name: language
+          in: query
+          description: language in ISO 639-1
+          schema:
+            type: string
+        - name: query
+          in: query
+          description: search text
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MovieList'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TMDBError'
+        '404':
+          description: Movie not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TMDBError'
+      security:
+        - tmdbApiKey: []
+components:
+  schemas:
+    MovieList:
+      type: object
+      properties:
+        page:
+          type: integer
+        results:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: integer
+            required:
+              - id
+        total_pages:
+          type: integer
+      required:
+        - page
+        - total_pages
+    MovieDetails:
+      type: object
+      properties:
+        id:
+          type: integer
+        poster_Path:
+          type: string
+        title:
+          type: string
+        overview:
+          type: string
+        genres:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: integer
+              name:
+                type: string
+            required:
+              - id
+              - name
+        credits:
+          type: object
+          properties:
+            cast:
+              type: array
+              items:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                required:
+                  - id
+                  - name
+      x-name-converter: "camelCase"  
+      required:
+        - id
+        - title
+        - overview
+    TMDBError:
+      type: object
+      properties:
+        status_Message:
+          type: string
+        status_Code:
+          type: integer
+  securitySchemes:
+    tmdbApiKey:
+      type: apiKey
+      in: query
+      name: api_key

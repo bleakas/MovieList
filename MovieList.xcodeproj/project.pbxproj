@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC1EFA00298708820083AE71 /* TMDBClient */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TMDBClient; path = Packages/TMDBClient; sourceTree = "<group>"; };
 		CC8E03532985448E00816902 /* MovieList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8E03562985448E00816902 /* MovieListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListApp.swift; sourceTree = "<group>"; };
 		CC8E03582985448E00816902 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +60,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC0D3221298BEED900AFA445 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CC9C03642986F5750092F969 /* SharedResources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		CC0D3222298BEEE400AFA445 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				CC9C03652986F6080092F969 /* MovieBrowser */,
+			);
+			name = Feature;
+			sourceTree = "<group>";
+		};
+		CC0D3223298BF0D600AFA445 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CC1EFA00298708820083AE71 /* TMDBClient */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		CC8E034A2985448E00816902 = {
 			isa = PBXGroup;
 			children = (
@@ -117,8 +142,9 @@
 		CC9C03632986F5750092F969 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				CC9C03642986F5750092F969 /* SharedResources */,
-				CC9C03652986F6080092F969 /* MovieBrowser */,
+				CC0D3223298BF0D600AFA445 /* Common */,
+				CC0D3222298BEEE400AFA445 /* Feature */,
+				CC0D3221298BEED900AFA445 /* Core */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
