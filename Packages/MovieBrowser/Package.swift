@@ -12,14 +12,15 @@ let package = Package(
             targets: ["MovieBrowser"])
     ],
     dependencies: [
-        .package(url: "https://github.com/SDWebImage/SDWebImageSwiftUI.git", from: "2.0.0")
+        .package(url: "https://github.com/SDWebImage/SDWebImageSwiftUI.git", from: "2.0.0"),
+        .package(path: "../TMDBClient")
     ],
     targets: [
         .target(
             name: "MovieBrowser",
-            dependencies: []),
+            dependencies: ["TMDBClient"]),
         .testTarget(
             name: "MovieBrowserTests",
-            dependencies: ["MovieBrowser"])
+            dependencies: ["MovieBrowser", "TMDBClient"])
     ]
 )
