@@ -12,7 +12,7 @@ import MovieBrowser
 struct MovieListApp: App {
     var body: some Scene {
         WindowGroup {
-            SwiftUIView()
+            MovieSearchView()
         }
     }
 }
