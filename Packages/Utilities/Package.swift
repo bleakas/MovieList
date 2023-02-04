@@ -16,6 +16,6 @@ let package = Package(
     targets: [
         .target(
             name: "Utilities",
-            dependencies: [])
+            dependencies: ["Resolver"])
     ]
 )
