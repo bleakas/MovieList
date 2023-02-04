@@ -8,7 +8,7 @@
 import Foundation
 import Get
 
-public struct TMDBClientDelegate {
+open class TMDBClientDelegate {
     private var apiKey: String
 
     public init(apiKey: String) {
@@ -27,6 +27,15 @@ extension TMDBClientDelegate: APIClientDelegate {
             if let url = urlComponents.url {
                 request.url = url
             }
+        }
+    }
+    
+    public func client(_ client: APIClient, validateResponse response: HTTPURLResponse, data: Data, task: URLSessionTask) throws {
+        if response.statusCode != 200 {
+            if let movieDBError = try? JSONDecoder().decode(TMDBError.self, from: data) {
+                throw movieDBError
+            }
+            throw APIError.unacceptableStatusCode(response.statusCode)
         }
     }
 }
