@@ -19,7 +19,8 @@ open class TMDBClientDelegate {
 extension TMDBClientDelegate: APIClientDelegate {
     public func client(_ client: APIClient, willSendRequest request: inout URLRequest) async throws {
         let queryItem = URLQueryItem(name: "api_key", value: apiKey)
-        if let urlString = request.url?.absoluteString,
+        if !apiKey.isEmpty,
+           let urlString = request.url?.absoluteString,
            var urlComponents = URLComponents(string: urlString) {
             var queryItems = urlComponents.queryItems ?? []
             queryItems.append(queryItem)
