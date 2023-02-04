@@ -34,7 +34,9 @@ extension MovieNetworkingService: MovieServiceProtocol {
         let movieIDs = (popular.value.results ?? []).map {
             $0.id
         }
-        return try await withThrowingTaskGroup(of: MovieDetails.self, returning: [MovieDetails].self) { group in
+        return try await withThrowingTaskGroup(of: MovieDetails.self, returning: [MovieDetails].self) {
+            [weak self] group in
+            guard let self else { return [] }
             for id in movieIDs {
                 group.addTask {
                     let request = Paths.movie.movieID(id).get(appendToResponse: .credits)
