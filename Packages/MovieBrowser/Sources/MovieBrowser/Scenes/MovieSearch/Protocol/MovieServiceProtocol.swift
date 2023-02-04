@@ -7,7 +7,7 @@
 
 import struct TMDBClient.MovieDetails
 
-protocol MovieServiceProtocol: AnyObject {
+public protocol MovieServiceProtocol: AnyObject {
     func getPopularMovies(page: Int) async throws -> [MovieDetails]
     func searchMovies(query: String, page: Int) async throws -> [MovieDetails]
 }

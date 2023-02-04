@@ -10,16 +10,17 @@ import Utilities
 import TMDBClient
 import Get
 
-final class MovieNetworkingService {
+public final class MovieNetworkingService {
     @Injected(name: .TMDBApiClient) private var apiClient: APIClient
+    public init() {}
 }
 
 extension MovieNetworkingService: MovieServiceProtocol {
-    func getPopularMovies(page: Int) async throws -> [MovieDetails] {
+    public func getPopularMovies(page: Int) async throws -> [MovieDetails] {
         return []
     }
 
-    func searchMovies(query: String, page: Int) async throws -> [MovieDetails] {
+    public func searchMovies(query: String, page: Int) async throws -> [MovieDetails] {
         return []
     }
 }
