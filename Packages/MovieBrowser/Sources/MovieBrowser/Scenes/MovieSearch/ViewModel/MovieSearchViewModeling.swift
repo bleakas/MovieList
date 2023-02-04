@@ -15,7 +15,7 @@ class MovieSearchViewModeling: ObservableObject {
     @Published var popularListState = ListState.initialLoading
     @Published var searchListState = ListState.initialLoading
     func loadMore() {}
-    
+
     enum ListState {
         case loaded
         case initialLoading
