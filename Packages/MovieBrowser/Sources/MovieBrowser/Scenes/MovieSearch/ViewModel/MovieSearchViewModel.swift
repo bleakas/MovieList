@@ -75,7 +75,7 @@ final public class MovieSearchViewModel: MovieSearchViewModeling {
         let immutableMovies = movies
         await MainActor.run { [weak self] in
             if immutableMovies.isEmpty {
-                self?.popularMoviesPage = maxPage
+                self?.popularMoviesPage = self?.maxPage ?? 500
             } else {
                 self?.popularMoviesPage += 1
                 self?.popularMovies.append(contentsOf: immutableMovies)
