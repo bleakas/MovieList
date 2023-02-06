@@ -18,7 +18,6 @@ let package = Package(
         .target(
             name: "SharedResources",
             dependencies: [.product(name: "RswiftLibrary", package: "R.swift")],
-            resources: [.copy("SharedResourcesResources")],
             plugins: [.plugin(name: "RswiftGeneratePublicResources", package: "R.swift")]
         )
     ]
