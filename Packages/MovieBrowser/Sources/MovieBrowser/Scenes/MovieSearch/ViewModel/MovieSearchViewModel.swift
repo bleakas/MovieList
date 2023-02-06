@@ -22,7 +22,7 @@ final public class MovieSearchViewModel: MovieSearchViewModeling {
         bindQuery()
     }
 
-    override func loadMore() {
+    public override func loadMore() {
         if query.isEmpty,
            popularMoviesPage >= maxPage {
             return
@@ -49,7 +49,7 @@ final public class MovieSearchViewModel: MovieSearchViewModeling {
         }
     }
 
-    override func refresh() {
+    public override func refresh() {
         Task {
             await MainActor.run { [weak self] in
                 self?.searchMoviesPage = 1
