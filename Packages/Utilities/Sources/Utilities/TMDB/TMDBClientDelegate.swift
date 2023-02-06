@@ -31,7 +31,9 @@ extension TMDBClientDelegate: APIClientDelegate {
         }
     }
 
-    public func client(_ client: APIClient, validateResponse response: HTTPURLResponse, data: Data, task: URLSessionTask) throws {
+    public func client(_ client: APIClient,
+                       validateResponse response: HTTPURLResponse,
+                       data: Data, task: URLSessionTask) throws {
         if response.statusCode != 200 {
             if let movieDBError = try? JSONDecoder().decode(TMDBError.self, from: data) {
                 throw movieDBError
