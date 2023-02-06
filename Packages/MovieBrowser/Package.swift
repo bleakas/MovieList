@@ -12,9 +12,10 @@ let package = Package(
             targets: ["MovieBrowser"])
     ],
     dependencies: [
-        .package(url: "https://github.com/SDWebImage/SDWebImageSwiftUI.git", from: "2.0.0"),
+        .package(url: "https://github.com/onevcat/Kingfisher.git", from: "7.6.0"),
         .package(path: "../TMDBClient"),
         .package(path: "../Utilities"),
+        .package(path: "../SharedResources"),
         .package(url: "https://github.com/hmlongco/Resolver.git", from: "1.1.2"),
         .package(url: "https://github.com/kean/Get", from: "1.0.2"),
         .package(url: "https://github.com/WeTransfer/Mocker.git", .upToNextMajor(from: "2.3.0"))
@@ -22,7 +23,7 @@ let package = Package(
     targets: [
         .target(
             name: "MovieBrowser",
-            dependencies: ["TMDBClient"]),
+            dependencies: ["TMDBClient", "Utilities", "Resolver", "Kingfisher", "SharedResources"]),
         .testTarget(
             name: "MovieBrowserTests",
             dependencies: ["MovieBrowser", "TMDBClient", "Get", "Mocker", "Utilities"])
