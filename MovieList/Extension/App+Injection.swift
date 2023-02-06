@@ -11,6 +11,6 @@ import MovieBrowser
 extension Resolver: ResolverRegistering {
   public static func registerAllServices() {
     defaultScope = .graph
-      MovieBrowserAssembly().assemble(Resolver.main)
+    MovieBrowserAssembly().assemble(Resolver.main)
   }
 }
