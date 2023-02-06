@@ -8,13 +8,15 @@
 import Combine
 import struct TMDBClient.MovieDetails
 
-class MovieSearchViewModeling: ObservableObject {
+open class MovieSearchViewModeling: ObservableObject {
     @Published var query: String = ""
-    @Published var popularMovies: [MovieDetails] = []
-    @Published var searchMovies: [MovieDetails] = []
-    @Published var popularListState = ListState.initialLoading
-    @Published var searchListState = ListState.initialLoading
+    @MainActor @Published var popularMovies: [MovieDetails] = []
+    @MainActor @Published var searchMovies: [MovieDetails] = []
+    @MainActor @Published var popularListState = ListState.initialLoading
+    @MainActor @Published var searchListState = ListState.initialLoading
+
     func loadMore() {}
+    func refresh() {}
 
     enum ListState {
         case loaded
