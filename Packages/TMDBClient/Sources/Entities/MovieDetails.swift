@@ -10,6 +10,7 @@ public struct MovieDetails: Codable {
     public var overview: String
     public var genres: [Genre]?
     public var credits: Credits?
+    public var voteAverage: Double?
 
     public struct Genre: Codable {
         public var id: Int
@@ -73,32 +74,35 @@ public struct MovieDetails: Codable {
         }
     }
 
-    public init(id: Int, posterPath: String? = nil, title: String, overview: String, genres: [Genre]? = nil, credits: Credits? = nil) {
+    public init(id: Int, posterPath: String? = nil, title: String, overview: String, genres: [Genre]? = nil, credits: Credits? = nil, voteAverage: Double? = nil) {
         self.id = id
         self.posterPath = posterPath
         self.title = title
         self.overview = overview
         self.genres = genres
         self.credits = credits
+        self.voteAverage = voteAverage
     }
 
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: StringCodingKey.self)
         self.id = try values.decode(Int.self, forKey: "id")
-        self.posterPath = try values.decodeIfPresent(String.self, forKey: "poster_Path")
+        self.posterPath = try values.decodeIfPresent(String.self, forKey: "poster_path")
         self.title = try values.decode(String.self, forKey: "title")
         self.overview = try values.decode(String.self, forKey: "overview")
         self.genres = try values.decodeIfPresent([Genre].self, forKey: "genres")
         self.credits = try values.decodeIfPresent(Credits.self, forKey: "credits")
+        self.voteAverage = try values.decodeIfPresent(Double.self, forKey: "vote_average")
     }
 
     public func encode(to encoder: Encoder) throws {
         var values = encoder.container(keyedBy: StringCodingKey.self)
         try values.encode(id, forKey: "id")
-        try values.encodeIfPresent(posterPath, forKey: "poster_Path")
+        try values.encodeIfPresent(posterPath, forKey: "poster_path")
         try values.encode(title, forKey: "title")
         try values.encode(overview, forKey: "overview")
         try values.encodeIfPresent(genres, forKey: "genres")
         try values.encodeIfPresent(credits, forKey: "credits")
+        try values.encodeIfPresent(voteAverage, forKey: "vote_average")
     }
 }

@@ -168,7 +168,7 @@ components:
       properties:
         id:
           type: integer
-        poster_Path:
+        poster_path:
           type: string
         title:
           type: string
@@ -201,7 +201,10 @@ components:
                 required:
                   - id
                   - name
-      x-name-converter: "camelCase"  
+        vote_average:
+          type: number
+          format: double
+      x-name-converter: "camelCase"
       required:
         - id
         - title
