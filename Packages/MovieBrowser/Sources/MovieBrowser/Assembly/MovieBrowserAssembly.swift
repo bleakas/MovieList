@@ -18,7 +18,10 @@ public final class MovieBrowserAssembly: Assembly {
         let configuration = APIClient.Configuration(baseURL: baseURL, delegate: TMDBClientDelegate(apiKey: apiKey))
         resolver.register(name: .TMDBApiClient) { APIClient(configuration: configuration) }
         resolver.register { MovieNetworkingService() }.implements(MovieServiceProtocol.self)
-        resolver.register { MovieSearchViewModel() }.implements(MovieSearchViewModeling.self)
+        resolver.register { MovieSearchViewModel(maxPage: TMDBUrlConstants.maxPages) }.implements(MovieSearchViewModeling.self)
+        resolver.register { (_, args) in
+            MovieDetailViewModel(movie: args())
+        }.implements(MovieDetailViewModeling.self)
     }
     public init() {}
 }
