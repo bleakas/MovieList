@@ -11,6 +11,33 @@
         }
       },
       {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher.git",
+        "state": {
+          "branch": null,
+          "revision": "2db469112fbcfd83ff0a96c4546772d283f317f5",
+          "version": "7.6.0"
+        }
+      },
+      {
+        "package": "Mocker",
+        "repositoryURL": "https://github.com/WeTransfer/Mocker.git",
+        "state": {
+          "branch": null,
+          "revision": "5d86f27a8f80d4ba388bc1a379a3c2289a1f3d18",
+          "version": "2.6.0"
+        }
+      },
+      {
+        "package": "Rswift",
+        "repositoryURL": "https://github.com/mac-cain13/R.swift.git",
+        "state": {
+          "branch": null,
+          "revision": "cffbe4aa55ab5f012590b38ad114079c407e6937",
+          "version": "7.2.4"
+        }
+      },
+      {
         "package": "Resolver",
         "repositoryURL": "https://github.com/hmlongco/Resolver",
         "state": {
@@ -20,21 +47,12 @@
         }
       },
       {
-        "package": "SDWebImage",
-        "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser",
         "state": {
           "branch": null,
-          "revision": "6c6b951845a520fa7e8356e28adb5339c0f008d3",
-          "version": "5.15.0"
-        }
-      },
-      {
-        "package": "SDWebImageSwiftUI",
-        "repositoryURL": "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
-        "state": {
-          "branch": null,
-          "revision": "61fefe9c284fd41ddef77d02749e88f00c305196",
-          "version": "2.2.2"
+          "revision": "4ad606ba5d7673ea60679a61ff867cc1ff8c8e86",
+          "version": "1.2.1"
         }
       },
       {
@@ -44,6 +62,15 @@
           "branch": null,
           "revision": "4ce950479707ea109f229d7230ec074a133b15d7",
           "version": "0.2.1"
+        }
+      },
+      {
+        "package": "XcodeEdit",
+        "repositoryURL": "https://github.com/tomlokhorst/XcodeEdit",
+        "state": {
+          "branch": null,
+          "revision": "cd466d6e8c5ffd2f2b61165d37b0646f09068e1e",
+          "version": "2.9.0"
         }
       }
     ]
