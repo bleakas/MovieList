@@ -39,7 +39,7 @@ extension MovieDetails {
 extension MovieDetails {
     public func imageURL(quality: Quality) -> URL? {
         if let posterPath {
-            return URL(string: TMDBUrlConstants.imageBaseURL + "\(quality.rawValue)" + posterPath)
+            return URL(string: TMDBUrlConstants.imageBaseURLString + "\(quality.rawValue)" + posterPath)
         }
         return nil
     }

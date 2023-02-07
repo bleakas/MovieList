@@ -13,8 +13,8 @@ import Get
 
 public final class MovieBrowserAssembly: Assembly {
     public func assemble(_ resolver: Resolver) {
-        let baseURL = URL(string: "https://api.themoviedb.org/3")
-        let apiKey = "815b63b537c380370911f6cb083031b0"
+        let baseURL = URL(string: TMDBUrlConstants.baseURLString)
+        let apiKey = TMDBUrlConstants.apiKey
         let configuration = APIClient.Configuration(baseURL: baseURL, delegate: TMDBClientDelegate(apiKey: apiKey))
         resolver.register(name: .TMDBApiClient) { APIClient(configuration: configuration) }
         resolver.register { MovieNetworkingService() }.implements(MovieServiceProtocol.self)
