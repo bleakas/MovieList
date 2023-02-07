@@ -57,13 +57,13 @@ public struct MovieSearchView: View {
 
     private func movieList(movies: Binding<[MovieDetails]>,
                            state: Binding<MovieSearchViewModeling.ListState>) -> some View {
-        return LazyVStack(spacing: 0) {
+        return LazyVStack(spacing: 0) { [weak viewModel] in
             ForEach(movies, id: \.id) { $movie in
                 NavigationLink(value: movie) {
                     MovieListItemView(movie: movie)
                         .onAppear {
                             if movie == movies.wrappedValue.last {
-                                viewModel.loadMore()
+                            viewModel?.loadMore()
                             }
                         }
                 }
