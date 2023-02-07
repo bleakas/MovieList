@@ -58,3 +58,10 @@ extension MovieDetails: Hashable {
        hasher.combine(id)
      }
 }
+
+// MARK: - mock data
+extension MovieDetails {
+    public static var movieMock: MovieDetails {
+        MovieDetails(id: 1, title: "title", overview: "overview")
+    }
+}

@@ -86,6 +86,6 @@ public struct MovieDetailView: View {
 
 struct MovieDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailView(movie: MovieDetails(id: 1, title: "asdasd", overview: "asdasda"))
+        MovieDetailView(movie: MovieDetails.movieMock)
     }
 }
