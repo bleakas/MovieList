@@ -16,11 +16,13 @@ public struct MovieSearchView: View {
     public var body: some View {
         NavigationStack {
             ZStack {
+                // Popular List
                 ScrollView {
                     movieList(movies: $viewModel.popularMovies, state: $viewModel.popularListState)
                 }
                 .opacity(viewModel.query.isEmpty ? 1 : 0)
                 .refreshable { viewModel.refresh() }
+                // Search List
                 if !viewModel.query.isEmpty {
                     ScrollView {
                         movieList(movies: $viewModel.searchMovies, state: $viewModel.searchListState)
@@ -38,6 +40,7 @@ public struct MovieSearchView: View {
                     }
                 }
             }
+            // Navigation configuration
             .navigationDestination(for: MovieDetails.self) { movie in
                 MovieDetailView(movie: movie)
             }

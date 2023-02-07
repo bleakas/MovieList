@@ -13,6 +13,7 @@ final public class MovieSearchViewModel: MovieSearchViewModeling {
     @Injected private var movieService: MovieServiceProtocol
     private var popularMoviesPage = 1
     private var searchMoviesPage = 1
+    // max page after additional loading is disabled
     private let maxPage: Int
     private var cancellables = Set<AnyCancellable>()
 
@@ -119,6 +120,7 @@ final public class MovieSearchViewModel: MovieSearchViewModeling {
         }
     }
 
+    // MARK: - listen to searchField text updates
     private func bindQuery() {
         $query
             .removeDuplicates()

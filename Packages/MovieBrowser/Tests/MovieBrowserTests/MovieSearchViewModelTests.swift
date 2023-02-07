@@ -12,7 +12,7 @@ import Resolver
 import MovieBrowser
 
 final class MovieSearchViewModelTests: XCTestCase {
-    
+
     @MainActor func testRetrieveMovies() {
         let movieService = MovieServiceMock()
         let items = [MovieDetails(id: 1, title: "", overview: "")]
@@ -29,7 +29,7 @@ final class MovieSearchViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.popularListState, .loaded)
         XCTAssertEqual(viewModel.searchListState, .loaded)
     }
-    
+
     @MainActor func testRetrieveNothing() {
         let movieService = MovieServiceMock()
         injectMovieService(movieService)
@@ -42,7 +42,7 @@ final class MovieSearchViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.popularMovies, [])
         XCTAssertEqual(viewModel.searchListState, .empty)
     }
-    
+
     @MainActor func testRefresh() {
         let movieService = MovieServiceMock()
         let items = [MovieDetails(id: 1, title: "", overview: "")]
@@ -61,7 +61,7 @@ final class MovieSearchViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.popularListState, .loaded)
         XCTAssertEqual(viewModel.searchListState, .loaded)
     }
-    
+
     @MainActor func testRetrieveError() {
         let movieService = MovieServiceMock()
         let error = TMDBError()
@@ -78,11 +78,11 @@ final class MovieSearchViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.popularListState, .error)
         XCTAssertEqual(viewModel.searchListState, .error)
     }
-    
+
     private func injectMovieService(_ service: MovieServiceMock) {
         Resolver.main.register { service }.implements(MovieServiceProtocol.self)
     }
-    
+
     private func waitABit() {
         let expectation = XCTestExpectation(description: "Delay")
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(10)) {
@@ -90,6 +90,4 @@ final class MovieSearchViewModelTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 1)
     }
-        
-        
 }

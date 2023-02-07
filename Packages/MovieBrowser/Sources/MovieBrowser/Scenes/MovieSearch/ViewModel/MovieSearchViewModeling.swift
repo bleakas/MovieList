@@ -9,6 +9,7 @@ import Combine
 import struct TMDBClient.MovieDetails
 
 open class MovieSearchViewModeling: ObservableObject {
+    // Search query
     @Published open var query: String = ""
     @MainActor @Published open var popularMovies: [MovieDetails] = []
     @MainActor @Published open var searchMovies: [MovieDetails] = []

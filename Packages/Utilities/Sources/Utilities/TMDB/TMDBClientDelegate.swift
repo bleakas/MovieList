@@ -9,6 +9,8 @@ import Foundation
 import Get
 import TMDBClient
 
+// MARK: - Deleagte helps injecting apiKey and error throwing
+
 public class TMDBClientDelegate {
     private var apiKey: String
 

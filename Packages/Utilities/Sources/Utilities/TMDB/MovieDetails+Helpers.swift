@@ -8,12 +8,14 @@
 import Foundation
 import TMDBClient
 
+// MARK: - rating descrtipton
 extension MovieDetails {
     public var ratingDescription: String {
         String(format: "%.1f", voteAverage ?? 0)
     }
 }
 
+// MARK: - genres descrtipton
 extension MovieDetails {
     public var genresDescription: String {
         let genreNames = (genres ?? []).map {
@@ -23,6 +25,7 @@ extension MovieDetails {
     }
 }
 
+// MARK: - cast descrtipton
 extension MovieDetails {
     public var castDescription: String {
         let items = (credits?.cast ?? []).map {
@@ -32,6 +35,7 @@ extension MovieDetails {
     }
 }
 
+// MARK: - image URL helper
 extension MovieDetails {
     public var imageURL: URL? {
         if let posterPath {
@@ -41,6 +45,7 @@ extension MovieDetails {
     }
 }
 
+// MARK: - MovieDetails + Hashable
 extension MovieDetails: Hashable {
     public static func == (lhs: TMDBClient.MovieDetails, rhs: TMDBClient.MovieDetails) -> Bool {
         lhs.id == rhs.id
