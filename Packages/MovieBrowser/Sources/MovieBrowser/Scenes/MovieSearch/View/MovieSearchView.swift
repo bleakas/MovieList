@@ -20,12 +20,12 @@ public struct MovieSearchView: View {
                     movieList(movies: $viewModel.popularMovies, state: $viewModel.popularListState)
                 }
                 .opacity(viewModel.query.isEmpty ? 1 : 0)
-                .refreshable { viewModel.loadMore() }
+                .refreshable { viewModel.refresh() }
                 if !viewModel.query.isEmpty {
                     ScrollView {
                         movieList(movies: $viewModel.searchMovies, state: $viewModel.searchListState)
                     }
-                    .refreshable { viewModel.loadMore() }
+                    .refreshable { viewModel.refresh() }
                     if case .initialLoading = viewModel.searchListState {
                         ProgressView()
                             .padding(.vertical, 10)

@@ -56,13 +56,17 @@ final public class MovieSearchViewModel: MovieSearchViewModeling {
     }
 
     public override func refresh() {
-        Task {
+        Task { [weak self] in
             await MainActor.run { [weak self] in
-                self?.searchMoviesPage = 1
-                self?.popularMoviesPage = 1
-                self?.searchMovies.removeAll()
-                self?.popularMovies.removeAll()
-                self?.loadMore()
+                guard let self else { return }
+                if self.query.isEmpty {
+                    self.popularMoviesPage = 1
+                    self.popularMovies.removeAll()
+                } else {
+                    self.searchMoviesPage = 1
+                    self.searchMovies.removeAll()
+                }
+                self.loadMore()
             }
         }
     }
