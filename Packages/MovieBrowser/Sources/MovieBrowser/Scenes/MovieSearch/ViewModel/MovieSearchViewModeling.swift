@@ -18,11 +18,11 @@ open class MovieSearchViewModeling: ObservableObject {
     open func loadMore() {}
     open func refresh() {}
 
-    public enum ListState {
+    public enum ListState: String {
         case loaded
         case initialLoading
         case additionalLoading
-        case error(_ error: Error)
+        case error
         case empty
     }
 }
