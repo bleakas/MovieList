@@ -8,3 +8,4 @@
 import Foundation
 
 final public class MovieDetailViewModel: MovieDetailViewModeling {}
+ 

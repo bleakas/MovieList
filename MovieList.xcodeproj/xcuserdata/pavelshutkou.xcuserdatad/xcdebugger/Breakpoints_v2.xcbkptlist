@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7BD51B45-8DB6-43AB-ABCE-502B35B8B32F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "515DEB57-C627-45DD-97D1-FC76B3383EF4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/TMDBClient/Sources/Utils/TMDBClientDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "client(_:validateResponse:data:task:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F95FD153-2251-43BB-84D4-57B0596F188C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/TMDBClient/Sources/Utils/TMDBClientDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "client(_:validateResponse:data:task:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA88D7B0-79F8-4CF4-B417-3C4286BACB3C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/TMDBClient/Sources/Utils/TMDBClientDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "client(_:validateResponse:data:task:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A599491B-25A0-4209-AE3F-8138A6539BEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/Service/MovieNetworkingService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "getPopularMovies(page:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "865E1089-5D5D-4030-BB2B-BF4372C2F4A8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/TMDBClient/Sources/Utils/TMDBClientDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "client(_:willSendRequest:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "467407DE-406E-469D-BA8F-0D4F6479F6C3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/TMDBClient/Sources/Utils/TMDBClientDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "client(_:willSendRequest:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD591F93-98DE-49BE-A5E4-A5DDA1E94F13"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/View/MovieSearchView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "previews"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F2F5B65-D43C-403A-9EEC-38218D985417"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieList/Extension/App+Injection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "registerAllServices()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "210B19E6-AECC-4360-8CC3-69482C6D6BFC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/View/MovieSearchView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "MovieSearchView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "210B19E6-AECC-4360-8CC3-69482C6D6BFC - faf9abf62266301"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of MovieBrowser.MovieSearchView.viewModel : MovieBrowser.MovieSearchViewModeling"
+                  moduleName = "MovieList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/View/MovieSearchView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "210B19E6-AECC-4360-8CC3-69482C6D6BFC - 225d1a5d0cfc7ebf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieBrowser.MovieSearchView.viewModel.getter : MovieBrowser.MovieSearchViewModeling"
+                  moduleName = "MovieList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/View/MovieSearchView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "210B19E6-AECC-4360-8CC3-69482C6D6BFC - f67be7e3e37c2498"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieBrowser.MovieSearchView.$viewModel.getter : SwiftUI.ObservedObject&lt;MovieBrowser.MovieSearchViewModeling&gt;.Wrapper"
+                  moduleName = "MovieList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/View/MovieSearchView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "210B19E6-AECC-4360-8CC3-69482C6D6BFC - 3f03cc176ad52876"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieBrowser.MovieSearchView.init() -&gt; MovieBrowser.MovieSearchView"
+                  moduleName = "MovieList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/View/MovieSearchView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0BD0FB4C-61AE-4C2A-BA61-FA5A68F7FBAC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/Utilities/Sources/Utilities/TMDB/MovieDetails+ImageURL.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "imageURL"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0215AE9F-A11E-43AD-9597-E3D6C8928234"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/View/MovieSearchView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B154337-CFCE-42B2-A670-88E08A21031D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "bindQuery()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87E6F216-758D-4560-AD75-585C06984D1B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "bindQuery()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "24A1E62A-5F5E-4D01-A908-16D3A7AC15B6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "searchMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1879C57E-436E-480F-BCB6-DF6CFD40041D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "searchMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5071205-5D73-45F5-96C4-DB3FB558BD91"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "searchMovies()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A5071205-5D73-45F5-96C4-DB3FB558BD91 - 50f25b7ab4a03f62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MovieBrowser.MovieSearchViewModel.searchMovies() async throws -&gt; ()"
+                  moduleName = "MovieList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "A5071205-5D73-45F5-96C4-DB3FB558BD91 - a3958c33c6662055"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for MovieBrowser.MovieSearchViewModel.searchMovies() async throws -&gt; ()"
+                  moduleName = "MovieList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "A5071205-5D73-45F5-96C4-DB3FB558BD91 - c0986186045bf36c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MovieBrowser.MovieSearchViewModel.searchMovies() async throws -&gt; ()"
+                  moduleName = "MovieList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "A5071205-5D73-45F5-96C4-DB3FB558BD91 - 795b04172c513d6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for MovieBrowser.MovieSearchViewModel.searchMovies() async throws -&gt; ()"
+                  moduleName = "MovieList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8E3C256-3F42-4DAC-A576-6BC4D11DD302"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "loadMore()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C8E3C256-3F42-4DAC-A576-6BC4D11DD302 - d28366995629a13d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in MovieBrowser.MovieSearchViewModel.loadMore() -&gt; ()"
+                  moduleName = "MovieList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "C8E3C256-3F42-4DAC-A576-6BC4D11DD302 - 69730b001b0d394a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in MovieBrowser.MovieSearchViewModel.loadMore() -&gt; ()"
+                  moduleName = "MovieList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "C8E3C256-3F42-4DAC-A576-6BC4D11DD302 - 9848d5fa207bef44"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in MovieBrowser.MovieSearchViewModel.loadMore() -&gt; ()"
+                  moduleName = "MovieList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "C8E3C256-3F42-4DAC-A576-6BC4D11DD302 - a1af66ee0d2e4190"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in MovieBrowser.MovieSearchViewModel.loadMore() -&gt; ()"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "C8E3C256-3F42-4DAC-A576-6BC4D11DD302 - 1a5f0b77400ad9e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in MovieBrowser.MovieSearchViewModel.loadMore() -&gt; ()"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "C8E3C256-3F42-4DAC-A576-6BC4D11DD302 - eb64d58d7b7c0fe9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in MovieBrowser.MovieSearchViewModel.loadMore() -&gt; ()"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66AC476D-ECA0-45F5-9610-547EFCE1E99C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "loadMore()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "66AC476D-ECA0-45F5-9610-547EFCE1E99C - d28366995629a212"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in MovieBrowser.MovieSearchViewModel.loadMore() -&gt; ()"
+                  moduleName = "MovieList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "236">
+               </Location>
+               <Location
+                  uuid = "66AC476D-ECA0-45F5-9610-547EFCE1E99C - 438538edce319462"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) await resume partial function for closure #1 @Sendable () async -&gt; () in MovieBrowser.MovieSearchViewModel.loadMore() -&gt; ()"
+                  moduleName = "MovieList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "66AC476D-ECA0-45F5-9610-547EFCE1E99C - c4dd5fc539010a66"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in MovieBrowser.MovieSearchViewModel.loadMore() -&gt; ()"
+                  moduleName = "MovieList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "452421A0-FC3C-4F9A-9968-9F3FDE3CFFB3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "loadMore()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E6D6510-CF9C-4163-9600-D35AA44255A9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "loadMore()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2286354A-A458-4C60-9B6F-C4F51632BDBF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "testRetrieveMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F8153CED-A304-4951-BB75-A24CC6D4458A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "searchMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F873224-4989-4DEF-B8FD-96EA15A6BDC8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "loadMore()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4F873224-4989-4DEF-B8FD-96EA15A6BDC8 - 5be66b2f27bdf501"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in MovieBrowser.MovieSearchViewModel.loadMore() -&gt; ()"
+                  moduleName = "MovieList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "4F873224-4989-4DEF-B8FD-96EA15A6BDC8 - 28ca6b587cba15ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in MovieBrowser.MovieSearchViewModel.loadMore() -&gt; ()"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7AE4AE22-775B-4435-AA88-5722C311FCA3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "loadPopular()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7AE4AE22-775B-4435-AA88-5722C311FCA3 - 3c55026c13218f5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for MovieBrowser.MovieSearchViewModel.loadPopular() async throws -&gt; ()"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "7AE4AE22-775B-4435-AA88-5722C311FCA3 - e8139bf829cecb55"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for MovieBrowser.MovieSearchViewModel.loadPopular() async throws -&gt; ()"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "680">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "490D8A27-7325-47BD-9654-BFADC642DCFB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "loadPopular()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "490D8A27-7325-47BD-9654-BFADC642DCFB - 3c55026c13218c72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for MovieBrowser.MovieSearchViewModel.loadPopular() async throws -&gt; ()"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "712">
+               </Location>
+               <Location
+                  uuid = "490D8A27-7325-47BD-9654-BFADC642DCFB - e8139bf829cec87c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for MovieBrowser.MovieSearchViewModel.loadPopular() async throws -&gt; ()"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "1500">
+               </Location>
+               <Location
+                  uuid = "490D8A27-7325-47BD-9654-BFADC642DCFB - 1a52b68877de9c67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) await resume partial function for MovieBrowser.MovieSearchViewModel.loadPopular() async throws -&gt; ()"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "490D8A27-7325-47BD-9654-BFADC642DCFB - a4d8157426f7047e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for MovieBrowser.MovieSearchViewModel.loadPopular() async throws -&gt; ()"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "490D8A27-7325-47BD-9654-BFADC642DCFB - 7acc001b01a754cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Swift.MainActor @Sendable () -&gt; () in MovieBrowser.MovieSearchViewModel.loadPopular() async throws -&gt; ()"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "194125E8-3F72-493C-80B4-0B30065BCE91"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "loadPopular()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E73E62D3-6713-4021-8476-A5F03F416E1B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "testRetrieveMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BAF0A57F-A37E-4B2E-A606-9DF41F677287"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "testRetrieveMovies()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BAF0A57F-A37E-4B2E-A606-9DF41F677287 - 74ae64fe51d74fc7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieBrowserTests.MovieSearchViewModelTests.testRetrieveMovies() -&gt; ()"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "900">
+               </Location>
+               <Location
+                  uuid = "BAF0A57F-A37E-4B2E-A606-9DF41F677287 - 74ae64fe51d74fc7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieBrowserTests.MovieSearchViewModelTests.testRetrieveMovies() -&gt; ()"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1996">
+               </Location>
+               <Location
+                  uuid = "BAF0A57F-A37E-4B2E-A606-9DF41F677287 - 74ae64fe51d74fc7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieBrowserTests.MovieSearchViewModelTests.testRetrieveMovies() -&gt; ()"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1964">
+               </Location>
+               <Location
+                  uuid = "BAF0A57F-A37E-4B2E-A606-9DF41F677287 - 74ae64fe51d74f64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieBrowserTests.MovieSearchViewModelTests.testRetrieveMovies() -&gt; ()"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "2000">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C29B9CEB-0F16-4BB7-A026-ABC99B536792"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "testRetrieveMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE005603-6E5C-47CB-9148-BF927B07F660"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "testRetrieveMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D9110DD-45BC-4595-93D0-599069CA2822"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "testRetrieveError()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FC88CDC4-8759-4E2C-A08E-B44DD6F6F051"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "MovieSearchViewModelTests"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "953E8C05-6F64-4B44-ADEF-AE86786595CF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "testRetrieveError()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8777F686-6246-4172-8BE4-AF73D53D25E1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "loadMore()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "80397F53-DED3-44DF-99AF-0089D19121F6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "testRetrieveError()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BD873EC-505F-4957-A895-F6243C0552E4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Sources/MovieBrowser/Scenes/MovieSearch/ViewModel/MovieSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "loadPopular()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "270513C7-6F42-4EB9-B364-A4008D67F01C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "MovieSearchViewModelTests"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "270513C7-6F42-4EB9-B364-A4008D67F01C - 8fdb9dcea7480b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieBrowserTests.MovieSearchViewModelTests.__allocating_init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; MovieBrowserTests.MovieSearchViewModelTests"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "270513C7-6F42-4EB9-B364-A4008D67F01C - bdf7a30d14a49c7d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieBrowserTests.MovieSearchViewModelTests.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; MovieBrowserTests.MovieSearchViewModelTests"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "270513C7-6F42-4EB9-B364-A4008D67F01C - 43261db318858cfb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieBrowserTests.MovieSearchViewModelTests.__allocating_init(selector: ObjectiveC.Selector) -&gt; MovieBrowserTests.MovieSearchViewModelTests"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "270513C7-6F42-4EB9-B364-A4008D67F01C - 3ea7daa60724ca9d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieBrowserTests.MovieSearchViewModelTests.init(selector: ObjectiveC.Selector) -&gt; MovieBrowserTests.MovieSearchViewModelTests"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "270513C7-6F42-4EB9-B364-A4008D67F01C - 6dc0652ad9f52219"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieBrowserTests.MovieSearchViewModelTests.__allocating_init() -&gt; MovieBrowserTests.MovieSearchViewModelTests"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "270513C7-6F42-4EB9-B364-A4008D67F01C - 22937effe703ff25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieBrowserTests.MovieSearchViewModelTests.init() -&gt; MovieBrowserTests.MovieSearchViewModelTests"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "270513C7-6F42-4EB9-B364-A4008D67F01C - 7ad38935f8f0412f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieBrowserTests.MovieSearchViewModelTests.__deallocating_deinit"
+                  moduleName = "MovieBrowserTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelshutkou/Documents/MovieList/Packages/MovieBrowser/Tests/MovieBrowserTests/MovieSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
