@@ -1,3 +1,3 @@
 # MovieBrowser
 
-A description of this package.
+MovieBrowser feature package

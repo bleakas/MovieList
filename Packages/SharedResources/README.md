@@ -1,3 +1,3 @@
 # SharedResources
 
-A description of this package.
+Shared R.swift generated resources.
