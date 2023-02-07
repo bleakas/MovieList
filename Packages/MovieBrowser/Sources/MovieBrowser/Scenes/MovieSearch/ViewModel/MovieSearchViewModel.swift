@@ -30,20 +30,26 @@ final public class MovieSearchViewModel: MovieSearchViewModeling {
                   searchMoviesPage >= maxPage {
             return
         }
-        Task {
-            if query.isEmpty {
+        if query.isEmpty {
+            Task {
                 do {
                     try await loadPopular()
                 } catch {
                     print(error.localizedDescription)
-                    return
+                    await MainActor.run { [weak self] in
+                        self?.popularListState = .error
+                    }
                 }
-            } else {
+            }
+        } else {
+            Task {
                 do {
                     try await searchMovies()
                 } catch {
                     print(error.localizedDescription)
-                    return
+                    await MainActor.run { [weak self] in
+                        self?.searchListState = .error
+                    }
                 }
             }
         }
