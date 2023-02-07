@@ -7,7 +7,6 @@
 
 import SwiftUI
 import struct TMDBClient.MovieDetails
-import Kingfisher
 import Utilities
 import SharedResources
 
@@ -17,23 +16,24 @@ struct MovieListItemView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack(spacing: 20) {
-                KFImage(movie.imageURL)
-                    .placeholder {
-                        ZStack {
-                            Rectangle().foregroundColor(.gray)
-                            if movie.posterPath == nil {
-                                Text(R.string.localizable.noImage())
-                                    .font(.system(size: 12, weight: .light, design: .default))
-                                    .foregroundColor(R.color.highlightedForeground.color)
-                            } else {
-                                ProgressView()
-                            }
-                        }
-                        .frame(width: 60, height: 90)
-                        }
+                AsyncImage(url: movie.imageURL(quality: .list)) { image in
+                    image
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 60, height: 90)
+                } placeholder: {
+                    ZStack {
+                        Rectangle().foregroundColor(.gray)
+                        if movie.posterPath == nil {
+                            Text(R.string.localizable.noImage())
+                                .font(.system(size: 12, weight: .light, design: .default))
+                                .foregroundColor(R.color.highlightedForeground.color)
+                        } else {
+                            ProgressView()
+                        }
+                    }
+                    .frame(width: 60, height: 90)
+                }
+                .frame(width: 60, height: 90)
                 VStack(alignment: .leading, spacing: 1) {
                     Text(movie.title)
                         .font(.system(size: 15, weight: .bold, design: .default))
@@ -53,7 +53,7 @@ struct MovieListItemView: View {
                             .font(.system(size: 15, weight: .regular, design: .default))
                     }
                 }
-                Image(systemName: "chevron.forward")
+                Image.chevronForward
                     .foregroundColor(R.color.subtitleForeground.color)
                     .padding(.trailing, 20)
             }

@@ -37,11 +37,15 @@ extension MovieDetails {
 
 // MARK: - image URL helper
 extension MovieDetails {
-    public var imageURL: URL? {
+    public func imageURL(quality: Quality) -> URL? {
         if let posterPath {
-            return URL(string: TMDBUrlConstants.imageBaseURL + posterPath)
+            return URL(string: TMDBUrlConstants.imageBaseURL + "\(quality.rawValue)" + posterPath)
         }
         return nil
+    }
+    public enum Quality: String {
+        case list = "w440_and_h660_face"
+        case full = "w1280"
     }
 }
 

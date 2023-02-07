@@ -19,14 +19,14 @@ public struct MovieDetailView: View {
                 GeometryReader { geometry in // Implement Parallax Scrolling Header
                     VStack {
                         if geometry.frame(in: .global).minY <= 0 {
-                            KFImage(viewModel.movie.imageURL)
+                            KFImage(viewModel.movie.imageURL(quality: .full))
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: geometry.size.width, height: geometry.size.height)
                                 .offset(y: geometry.frame(in: .global).minY/9)
                                 .clipped()
                         } else {
-                            KFImage(viewModel.movie.imageURL)
+                            KFImage(viewModel.movie.imageURL(quality: .full))
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: geometry.size.width,

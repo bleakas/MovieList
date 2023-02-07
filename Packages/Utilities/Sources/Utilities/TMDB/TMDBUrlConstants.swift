@@ -8,6 +8,6 @@
 import Foundation
 
 public struct TMDBUrlConstants {
-    public static var imageBaseURL = "https://image.tmdb.org/t/p/w440_and_h660_face/"
-    public static var maxPages = 500
+    public static var imageBaseURL = "https://image.tmdb.org/t/p/"
+    public static var maxPages = 6
 }
