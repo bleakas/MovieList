@@ -34,21 +34,33 @@ final class MovieNetworkingServiceTests: XCTestCase {
             self.client
         }
     }
+    
+    private func mockMovieRequest(movies: [MovieDetails]) {
+        for movie in movies {
+            let movieURL = URL(string: "\(baseURLString)/movie/\(movie.id)")!
+            let movieData = try! JSONEncoder().encode(movie)
+            Mock(url: movieURL,
+                 ignoreQuery: true,
+                 dataType: .json,
+                 statusCode: 200,
+                 data: [.get: movieData])
+            .register()
+        }
+    }
 
-    func testReturnsExpectedMovie() async throws {
+    func testReturnsExpectedMoviesInExpectedOrder() async throws {
         let netowrkingClient = MovieNetworkingService()
         // Mock data
-        let movieData = try JSONEncoder().encode(MovieDetails(id: 1, title: "title", overview: ""))
-        let movieList = MovieList(page: 1, results: [MovieList.Result(id: 1)], totalPages: 1)
+        var movies = [MovieDetails]()
+        var movieListResults = [MovieList.Result]()
+        for i in 0..<100 {
+            movies.append(MovieDetails(id: i, title: "title", overview: "overview"))
+            movieListResults.append(MovieList.Result(id: i))
+        }
+        let movieList = MovieList(page: 1, results: movieListResults, totalPages: 1)
         let movieListData = try JSONEncoder().encode(movieList)
         // Requests mocking
-        let movieURL = URL(string: "\(baseURLString)/movie/1")!
-        Mock(url: movieURL,
-             ignoreQuery: true,
-             dataType: .json,
-             statusCode: 200,
-             data: [.get: movieData])
-        .register()
+        mockMovieRequest(movies: movies)
         Mock(url: movieListURL,
              ignoreQuery: true,
              dataType: .json,
@@ -65,8 +77,8 @@ final class MovieNetworkingServiceTests: XCTestCase {
         let popularMovies = try await netowrkingClient.getPopularMovies(page: 1)
         let searchMovies = try await netowrkingClient.searchMovies(query: "1", page: 1)
         // check if we got movie with id 1
-        XCTAssertEqual(popularMovies[0].id, 1)
-        XCTAssertEqual(searchMovies[0].id, 1)
+        XCTAssertEqual(popularMovies, movies)
+        XCTAssertEqual(searchMovies, movies)
     }
 
     func testGetMovieReturnsTMDBError() async throws {
@@ -114,16 +126,10 @@ final class MovieNetworkingServiceTests: XCTestCase {
     func testGetMovieListReturnsTMDBError() async throws {
         let netowrkingClient = MovieNetworkingService()
         // Mock data
-        let movieData = try JSONEncoder().encode(MovieDetails(id: 1, title: "title", overview: ""))
+        let movies = [MovieDetails(id: 1, title: "title", overview: "")]
         let errorData = try JSONEncoder().encode(TMDBError(statusMessage: "error", statusCode: 401))
         // Requests mocking
-        let movieURL = URL(string: "\(baseURLString)/movie/1")!
-        Mock(url: movieURL,
-             ignoreQuery: true,
-             dataType: .json,
-             statusCode: 200,
-             data: [.get: movieData])
-        .register()
+        mockMovieRequest(movies: movies)
         Mock(url: movieListURL,
              ignoreQuery: true,
              dataType: .json,
@@ -185,7 +191,6 @@ final class MovieNetworkingServiceTests: XCTestCase {
             do {
                 try _ = await netowrkingClient.searchMovies(query: "1", page: 1)
             } catch {
-                let error2 = error
                 XCTAssertTrue(error is DecodingError)
                 return
             }
