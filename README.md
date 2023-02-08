@@ -6,8 +6,8 @@ App lets you browse and search movies from [TMDB](https://www.themoviedb.org/)
 - Supports only iphones in portrait
 - IOS >= 16
 > First really stable and configurable navigation API(NavigationStack), so no navigation migration is needed in the future(NavigationView is now deprecated)
- \>80% iphone use base will be available in less than half a year([Proof](https://www.macrumors.com/2022/06/03/ios-15-installation-numbers-apple/))
-So when our product reaches the market IOS 16 will be widely distributed
+> \>80% iphone use base will be available in less than half a year([Proof](https://www.macrumors.com/2022/06/03/ios-15-installation-numbers-apple/))
+> So when our product reaches the market IOS 16 will be widely distributed
 - Xcode 14.2(Works best with IOS 16 target)
 
 # Installation
