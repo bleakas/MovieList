@@ -102,7 +102,11 @@ final public class MovieSearchViewModel: MovieSearchViewModeling {
                 self?.searchListState = .additionalLoading
             }
         }
+        let queryCopy = query
         var movies = try await movieService.searchMovies(query: query, page: searchMoviesPage)
+        if queryCopy != query {
+            return
+        }
         for movie in movies {
             if await searchMovies.contains(movie),
                let index = movies.firstIndex(of: movie) {
@@ -141,7 +145,9 @@ final public class MovieSearchViewModel: MovieSearchViewModeling {
     private func clearSearchMovies() {
         Task {
             await MainActor.run { [weak self] in
-                self?.searchMovies = []
+                if !query.isEmpty {
+                    self?.searchMovies = []
+                }
                 self?.searchMoviesPage = 1
                 self?.searchListState = .initialLoading
             }
