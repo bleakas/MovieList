@@ -85,13 +85,14 @@ final public class MovieSearchViewModel: MovieSearchViewModeling {
         }
         let immutableMovies = movies
         await MainActor.run { [weak self] in
+            guard let self else { return }
             if immutableMovies.isEmpty {
-                self?.popularMoviesPage = self?.maxPage ?? 500
+                self.popularMoviesPage = self.maxPage
             } else {
-                self?.popularMoviesPage += 1
-                self?.popularMovies.append(contentsOf: immutableMovies)
+                self.popularMoviesPage += 1
+                self.popularMovies.append(contentsOf: immutableMovies)
             }
-            self?.popularListState = .loaded
+            self.popularListState = .loaded
         }
     }
 
@@ -110,13 +111,14 @@ final public class MovieSearchViewModel: MovieSearchViewModeling {
         }
         let immutableMovies = movies
         await MainActor.run { [weak self] in
+            guard let self else { return }
             if immutableMovies.isEmpty {
-                self?.searchMoviesPage = self?.maxPage ?? 500
+                self.searchMoviesPage = self.maxPage
             } else {
-                self?.searchMoviesPage += 1
-                self?.searchMovies.append(contentsOf: immutableMovies)
+                self.searchMoviesPage += 1
+                self.searchMovies.append(contentsOf: immutableMovies)
             }
-            self?.searchListState = searchMovies.isEmpty ? .empty : .loaded
+            self.searchListState = self.searchMovies.isEmpty ? .empty : .loaded
         }
     }
 
