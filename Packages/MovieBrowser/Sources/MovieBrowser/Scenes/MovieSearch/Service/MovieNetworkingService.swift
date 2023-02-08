@@ -47,7 +47,7 @@ extension MovieNetworkingService: MovieServiceProtocol {
                 movies.append(item)
             }
             movies.sort {
-                $0.0 > $1.0
+                $0.0 < $1.0
             }
             return movies.map { $0.1 }
         }
