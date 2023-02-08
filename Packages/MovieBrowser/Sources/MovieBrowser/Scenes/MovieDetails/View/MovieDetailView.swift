@@ -19,16 +19,12 @@ public struct MovieDetailView: View {
                 GeometryReader { geometry in // Implement Parallax Scrolling Header
                     VStack {
                         if geometry.frame(in: .global).minY <= 0 {
-                            KFImage(viewModel.movie.imageURL(quality: .full))
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
+                                posterImage(url: viewModel.movie.imageURL(quality: .full))
                                 .frame(width: geometry.size.width, height: geometry.size.height)
                                 .offset(y: geometry.frame(in: .global).minY/9)
                                 .clipped()
                         } else {
-                            KFImage(viewModel.movie.imageURL(quality: .full))
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
+                            posterImage(url: viewModel.movie.imageURL(quality: .full))
                                 .frame(width: geometry.size.width,
                                        height: geometry.size.height + geometry.frame(in: .global).minY)
                                 .clipped()
@@ -68,17 +64,26 @@ public struct MovieDetailView: View {
                 .background(.bar)
                 .border(.black)
         }
-                .navigationTitle(viewModel.movie.title)
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Text(viewModel.movie.ratingDescription + " 🏆")
-                            .foregroundColor(R.color.subtitleForeground.color)
-                            .font(.system(size: 15, weight: .regular, design: .default))
-                    }
-                }
-
+        .navigationTitle(viewModel.movie.title)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Text(viewModel.movie.ratingDescription + " 🏆")
+                    .foregroundColor(R.color.subtitleForeground.color)
+                    .font(.system(size: 15, weight: .regular, design: .default))
+            }
+        }
     }
+
+    private func posterImage(url: URL?) -> some View {
+        KFImage(url)
+            .resizable()
+            .placeholder {
+                ProgressView()
+            }
+            .aspectRatio(contentMode: .fill)
+    }
+
     public init(movie: MovieDetails) {
         self.viewModel = Resolver.resolve(args: movie)
     }
