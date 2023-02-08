@@ -5,7 +5,7 @@ App lets you browse and search movies from [TMDB](https://www.themoviedb.org/)
 # Requirements
 - Supports only iphones in portrait
 - IOS >= 16
-First really stable and configurable navigation API(NavigationStack), so no navigation migration is needed in the future(NavigationView is now deprecated)
+> First really stable and configurable navigation API(NavigationStack), so no navigation migration is needed in the future(NavigationView is now deprecated)
  \>80% iphone use base will be available in less than half a year([Proof](https://www.macrumors.com/2022/06/03/ios-15-installation-numbers-apple/))
 So when our product reaches the market IOS 16 will be widely distributed
 - Xcode 14.2(Works best with IOS 16 target)
@@ -14,7 +14,8 @@ So when our product reaches the market IOS 16 will be widely distributed
 1. Install [HomeBrew](https://brew.sh/)
 2. Install SwiftLint
 > brew install swiftlint
-
+3. Open project, wait until all packages are fetched and installed
+4. Click run button
 # Troubleshooting
 - Clean build folder(Product->Clean Build Folder)
 - Clear SwiftPM chache(File->Packages->Reset Package Chaches)
