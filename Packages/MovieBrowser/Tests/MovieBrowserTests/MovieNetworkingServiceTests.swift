@@ -34,11 +34,11 @@ final class MovieNetworkingServiceTests: XCTestCase {
             self.client
         }
     }
-    
-    private func mockMovieRequest(movies: [MovieDetails]) {
+
+    private func mockMovieRequest(movies: [MovieDetails]) throws {
         for movie in movies {
             let movieURL = URL(string: "\(baseURLString)/movie/\(movie.id)")!
-            let movieData = try! JSONEncoder().encode(movie)
+            let movieData = try JSONEncoder().encode(movie)
             Mock(url: movieURL,
                  ignoreQuery: true,
                  dataType: .json,
@@ -53,14 +53,14 @@ final class MovieNetworkingServiceTests: XCTestCase {
         // Mock data
         var movies = [MovieDetails]()
         var movieListResults = [MovieList.Result]()
-        for i in 0..<100 {
-            movies.append(MovieDetails(id: i, title: "title", overview: "overview"))
-            movieListResults.append(MovieList.Result(id: i))
+        for index in 0..<100 {
+            movies.append(MovieDetails(id: index, title: "title", overview: "overview"))
+            movieListResults.append(MovieList.Result(id: index))
         }
         let movieList = MovieList(page: 1, results: movieListResults, totalPages: 1)
         let movieListData = try JSONEncoder().encode(movieList)
         // Requests mocking
-        mockMovieRequest(movies: movies)
+        try mockMovieRequest(movies: movies)
         Mock(url: movieListURL,
              ignoreQuery: true,
              dataType: .json,
@@ -129,7 +129,7 @@ final class MovieNetworkingServiceTests: XCTestCase {
         let movies = [MovieDetails(id: 1, title: "title", overview: "")]
         let errorData = try JSONEncoder().encode(TMDBError(statusMessage: "error", statusCode: 401))
         // Requests mocking
-        mockMovieRequest(movies: movies)
+        try mockMovieRequest(movies: movies)
         Mock(url: movieListURL,
              ignoreQuery: true,
              dataType: .json,
