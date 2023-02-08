@@ -14,8 +14,9 @@ So when our product reaches the market IOS 16 will be widely distributed
 1. Install [HomeBrew](https://brew.sh/)
 2. Install SwiftLint
 > brew install swiftlint
-3. Open project, wait until all packages are fetched and installed
-4. Click run button
+3. Clone repo
+4. Open project, wait until all packages are fetched and installed
+5. Click run button
 # Troubleshooting
 - Clean build folder(Product->Clean Build Folder)
 - Clear SwiftPM chache(File->Packages->Reset Package Chaches)
