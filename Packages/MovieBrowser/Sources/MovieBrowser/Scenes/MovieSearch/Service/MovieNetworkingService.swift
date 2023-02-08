@@ -31,23 +31,25 @@ extension MovieNetworkingService: MovieServiceProtocol {
 
     private func extractMoviesFromMovieList(request: Request<TMDBClient.MovieList>) async throws -> [MovieDetails] {
         let popular = try await apiClient.send(request)
-        let movieIDs = (popular.value.results ?? []).map {
-            $0.id
-        }
-        return try await withThrowingTaskGroup(of: MovieDetails.self,
+        let movieResults = popular.value.results ?? []
+        // Task group with index of movie for making originally ordered array of movies
+        return try await withThrowingTaskGroup(of: (Int, MovieDetails).self,
                                                returning: [MovieDetails].self) { [weak self] group in
             guard let self else { return [] }
-            for id in movieIDs {
+            for (index, result) in movieResults.enumerated() {
                 group.addTask {
-                    let request = Paths.movie.movieID(id).get(appendToResponse: .credits)
-                    return try await self.apiClient.send(request).value
+                    let request = Paths.movie.movieID(result.id).get(appendToResponse: .credits)
+                    return try await (index, self.apiClient.send(request).value)
                 }
             }
-            var movies = [MovieDetails]()
+            var movies = [(Int, MovieDetails)]()
             for try await item in group {
                 movies.append(item)
             }
-            return movies
+            movies.sort {
+                $0.0 > $1.0
+            }
+            return movies.map { $0.1 }
         }
     }
 }
