@@ -10,6 +10,7 @@
 		CC0D3226298C5BD100AFA445 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = CC0D3225298C5BD100AFA445 /* Resolver */; };
 		CC0D3229298C6CEE00AFA445 /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = CC0D3228298C6CEE00AFA445 /* Utilities */; };
 		CC0D322C298C7C2600AFA445 /* App+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0D322B298C7C2600AFA445 /* App+Injection.swift */; };
+		CC48260F299AAB24002C6D90 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CC48260E299AAB24002C6D90 /* Kingfisher */; };
 		CC8E03572985448E00816902 /* MovieListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E03562985448E00816902 /* MovieListApp.swift */; };
 		CC8E035B2985448F00816902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC8E035A2985448F00816902 /* Assets.xcassets */; };
 		CC8E035F2985448F00816902 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC8E035E2985448F00816902 /* Preview Assets.xcassets */; };
@@ -52,6 +53,7 @@
 				CC0D3229298C6CEE00AFA445 /* Utilities in Frameworks */,
 				CC8E68012986F7D400E1B92C /* MovieBrowser in Frameworks */,
 				CCF0EBF82986EB840084A638 /* SharedResources in Frameworks */,
+				CC48260F299AAB24002C6D90 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +187,7 @@
 				CC8E68002986F7D400E1B92C /* MovieBrowser */,
 				CC0D3225298C5BD100AFA445 /* Resolver */,
 				CC0D3228298C6CEE00AFA445 /* Utilities */,
+				CC48260E299AAB24002C6D90 /* Kingfisher */,
 			);
 			productName = MovieList;
 			productReference = CC8E03532985448E00816902 /* MovieList.app */;
@@ -238,6 +241,7 @@
 			mainGroup = CC8E034A2985448E00816902;
 			packageReferences = (
 				CC0D3224298C5BD100AFA445 /* XCRemoteSwiftPackageReference "Resolver" */,
+				CC48260D299AAB24002C6D90 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = CC8E03542985448E00816902 /* Products */;
 			projectDirPath = "";
@@ -597,6 +601,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		CC48260D299AAB24002C6D90 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -608,6 +620,11 @@
 		CC0D3228298C6CEE00AFA445 /* Utilities */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Utilities;
+		};
+		CC48260E299AAB24002C6D90 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC48260D299AAB24002C6D90 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		CC8E68002986F7D400E1B92C /* MovieBrowser */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -9,6 +9,7 @@ import SwiftUI
 import struct TMDBClient.MovieDetails
 import Utilities
 import SharedResources
+import Kingfisher
 
 struct MovieListItemView: View {
     var movie: MovieDetails
@@ -16,24 +17,22 @@ struct MovieListItemView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack(spacing: 20) {
-                AsyncImage(url: movie.imageURL(quality: .list)) { image in
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                } placeholder: {
-                    ZStack {
-                        Rectangle().foregroundColor(.gray)
-                        if movie.posterPath == nil {
-                            Text(R.string.localizable.noImage())
-                                .font(.system(size: 12, weight: .light, design: .default))
-                                .foregroundColor(R.color.highlightedForeground.color)
-                        } else {
-                            ProgressView()
+                KFImage(movie.imageURL(quality: .list))
+                    .resizable()
+                    .placeholder {
+                        ZStack {
+                            Rectangle().foregroundColor(.gray)
+                            if movie.posterPath == nil {
+                                Text(R.string.localizable.noImage())
+                                    .font(.system(size: 12, weight: .light, design: .default))
+                                    .foregroundColor(R.color.highlightedForeground.color)
+                            } else {
+                                ProgressView()
+                            }
                         }
+                        .frame(width: 60, height: 90)
                     }
                     .frame(width: 60, height: 90)
-                }
-                .frame(width: 60, height: 90)
                 VStack(alignment: .leading, spacing: 1) {
                     Text(movie.title)
                         .font(.system(size: 15, weight: .bold, design: .default))

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MovieBrowser
+import Kingfisher
 
 @main
 struct MovieListApp: App {
@@ -14,5 +15,20 @@ struct MovieListApp: App {
         WindowGroup {
             MovieSearchView()
         }
+    }
+
+    init() {
+        configureKingfisher()
+    }
+}
+
+// MARK: - configure Kingfisher
+
+extension MovieListApp {
+    private func configureKingfisher() {
+        let cache = ImageCache.default
+        let maxSize = 1000 * 1024 * 10
+        cache.diskStorage.config.sizeLimit = UInt(maxSize)
+        cache.memoryStorage.config.totalCostLimit = maxSize
     }
 }
