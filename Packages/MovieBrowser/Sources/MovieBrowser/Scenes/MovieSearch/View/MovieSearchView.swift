@@ -21,13 +21,23 @@ public struct MovieSearchView: View {
                     movieList(movies: $viewModel.popularMovies, state: $viewModel.popularListState)
                 }
                 .opacity(viewModel.query.isEmpty ? 1 : 0)
-                .refreshable { viewModel.refresh() }
+                .refreshable {
+                    // hax fixing crashes of native swiftUI pull to refresh
+                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
+                        self.viewModel.refresh()
+                    }
+                }
                 // Search List
                 if !viewModel.query.isEmpty {
                     ScrollView {
                         movieList(movies: $viewModel.searchMovies, state: $viewModel.searchListState)
                     }
-                    .refreshable { viewModel.refresh() }
+                    .refreshable {
+                        // hax fixing crashes of native swiftUI pull to refresh
+                        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
+                            self.viewModel.refresh()
+                        }
+                    }
                     if case .initialLoading = viewModel.searchListState {
                         ProgressView()
                             .padding(.vertical, 10)
