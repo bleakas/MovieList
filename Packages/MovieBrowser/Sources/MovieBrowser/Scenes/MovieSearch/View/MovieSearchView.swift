@@ -8,6 +8,7 @@
 import SwiftUI
 import Resolver
 import SharedResources
+import Utilities
 import struct TMDBClient.MovieDetails
 
 public struct MovieSearchView: View {
@@ -27,6 +28,8 @@ public struct MovieSearchView: View {
                         self.viewModel.refresh()
                     }
                 }
+                .adaptsToKeyboard()
+                .ignoresSafeArea(.keyboard, edges: .bottom)
                 // Search List
                 if !viewModel.query.isEmpty {
                     ScrollView {
@@ -38,6 +41,9 @@ public struct MovieSearchView: View {
                             self.viewModel.refresh()
                         }
                     }
+                    .scrollDismissesKeyboard(.interactively)
+                    .adaptsToKeyboard()
+                    .ignoresSafeArea(.keyboard, edges: .bottom)
                     if case .initialLoading = viewModel.searchListState {
                         ProgressView()
                             .padding(.vertical, 10)
